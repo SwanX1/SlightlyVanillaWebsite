@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
     let lastscroll = 0;
     document.querySelector('.main-arrow').classList.remove('hide-opacity');
     document.body.onscroll = e => {
-        console.log(lastscroll);
         if (document.documentElement.scrollTop === 0) {
             onzeroscroll = true;
             document.querySelector('.main-arrow').classList.remove('hide-opacity');
