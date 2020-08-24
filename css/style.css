@@ -1,0 +1,86 @@
+@import url("https://unpkg.com/spectre.css/dist/spectre.min.css");
+@import url("https://unpkg.com/spectre.css/dist/spectre-exp.min.css");
+@import url("https://unpkg.com/spectre.css/dist/spectre-icons.min.css");
+
+@keyframes bob {
+    0% {
+        top: 10px;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
+body {
+    color: rgb(0, 0, 0);
+}
+
+.main-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transition: opacity 1s ease-in-out;
+}
+
+.main-arrow::before {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    animation-name: bob;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.hero {
+    background-image: url('../assets/mountain-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 8rem;
+    min-height: 100vh;
+}
+
+.hero-body {
+    color: #eee;
+    text-align: center;
+}
+
+.btn-hero {
+    margin-right: 24px;
+}
+
+.footer {
+    background: #f7f8f9;
+
+}
+
+.btn {
+    background: rgba(0, 0, 32, 0.4);
+    color: #7272e7!important;
+    transition: color .2s;
+}
+
+.btn:hover,
+.btn:active {
+    background: #5755d9;
+    color: #eee!important;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a[href] {
+    transition: text-decoration 0.2s;
+}
