@@ -39,8 +39,13 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.hide {
+.hide-opacity {
     opacity: 0;
+}
+
+.line-space {
+    margin: 2rem 0;
+    content: '';
 }
 
 .hero {
@@ -56,8 +61,22 @@ body {
     text-align: center;
 }
 
+.hero-text > h1, .hero-text > h5 {
+    margin-bottom: 1rem;
+}
+
+.hero-logo {
+    width: 200px;
+    height: 190px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 .btn-hero {
     margin-right: 24px;
+}
+
+.content {
+    padding: 6rem 4rem;
 }
 
 .footer {
