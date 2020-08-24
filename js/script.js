@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     let onzeroscroll = false;
+    if (document.documentElement.scrollTop === 0)
+        onzeroscroll = true;
     let onmainscroll = false;
     let lastscroll = 0;
     document.querySelector('.main-arrow').classList.remove('hide-opacity');
