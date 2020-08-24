@@ -1,6 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.main-arrow').classList.remove('hide-opacity');
     document.body.onscroll = () => {
-        document.querySelector('.main-arrow').classList.add('hide-opacity');
-        document.body.onscroll = null;
+        if (document.body.parentNode.scrollTop === 0) {
+            document.querySelector('.main-arrow').classList.remove('hide-opacity');
+        } else {
+            document.querySelector('.main-arrow').classList.add('hide-opacity');
+        }
     };
 });

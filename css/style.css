@@ -24,7 +24,7 @@ body {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transition: opacity 1s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 .main-arrow::before {
@@ -34,7 +34,7 @@ body {
     left: 50%;
     color: rgb(255, 255, 255);
     animation-name: bob;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -68,7 +68,7 @@ body {
 .hero-logo {
     width: 200px;
     height: 190px;
-    filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #000);
 }
 
 .btn-hero {
@@ -91,7 +91,8 @@ body {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:focus {
     background: #5755d9;
     color: #eee!important;
 }
