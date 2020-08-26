@@ -1,4 +1,4 @@
-loadJSON('../assets/modlist.json')
+loadJSON('./assets/modlist.json')
 .then(json => {
     const modlist = json;
     htmloutput = '<!-- The following is automatically generated -->\n';
