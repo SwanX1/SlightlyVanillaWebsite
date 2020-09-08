@@ -1,4 +1,4 @@
-loadJSON('./assets/modlist.json')
+loadJSON('https://gist.githubusercontent.com/SwanX1/d628ef0e92e4086667e6f376665f3dac/raw')
 .then(json => {
     const modlist = json;
     htmloutput = '<!-- The following is automatically generated -->\n';
